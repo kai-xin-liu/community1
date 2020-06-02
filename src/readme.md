@@ -10,3 +10,7 @@ CREATE CACHED TABLE "PUBLIC"."USER" COMMENT 'user'(
     "GMT_MODIFIED" BIGINT
 )
 ```
+```bash
+mvn flyway:migrate
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+```
